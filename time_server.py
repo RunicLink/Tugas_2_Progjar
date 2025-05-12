@@ -11,7 +11,7 @@ def handle_client(conn, addr):
                 break
 
             message = data.decode('utf-8')
-            print(f"Dari {addr}: {repr(message)}")
+            print(f"Dari {addr}: '{message.strip()}'")
 
             # Cek QUIT
             if message.strip() == "QUIT":
