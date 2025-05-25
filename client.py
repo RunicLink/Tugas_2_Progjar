@@ -1,7 +1,7 @@
 import socket
 
 def main():
-    host = 'localhost'  # Ganti jika server berada di alamat lain
+    host = '172.16.16.101'  
     port = 45000
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
